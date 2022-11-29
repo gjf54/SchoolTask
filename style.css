@@ -12,6 +12,9 @@ div[class^=col], div.w-50
 .container
 {
     background-color: #EEF;
+    padding-top: 20px;
+    border: 1px solid #EEF;
+    border-radius: 40px;
 }
 
 .body
@@ -19,24 +22,38 @@ div[class^=col], div.w-50
     background-color: #CCC;
 }
 
-nav ul > li
+nav > ul
 {
-    display: inline-block;
-    background-color: blue;
-    padding: 3em;
-    margin-top: 0.5em;
-    border: 1px solid #FFF;
-    border-radius: 10px;
+    list-style-type: none;
 }
 
-nav ul > li > a
+nav ul > li
 {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3em;
+}
+
+nav ul a
+{
+    border: 1px solid #FFF;
+    border-radius: 10px;    
+    padding: 3em;
+    margin-top: 0.5em;
+    margin: -40px;
     text-decoration: none;
     color: #FFF;
     text-transform: uppercase;
+    background-color: #00A;
 }
 
-.active, .active > a 
+/*nav ul > li > a:hover
+{
+    background-color: #00B;
+}*/
+
+.active 
 {
     background-color: #DDD;
     color: #000;
@@ -54,4 +71,36 @@ header figure > h3
 {
     padding: 20px;
     text-transform: uppercase;
+}
+
+.imageBoard
+{
+    padding: 30px;
+}
+
+.imageBoard > img
+{
+    max-width: 70%;
+    border: 0px solid #AAA;
+    border-radius: 30px;
+}
+
+.circles
+{
+    height: 400px;
+    padding: 150px;
+}
+
+.circles h6
+{
+    display: inline-block;
+    padding: 30px;
+    border: 3px solid #BBB;
+    border-radius: 90%;
+    box-sizing: border-box;
+}
+
+.circle p
+{
+    font-size: 50%;
 }
