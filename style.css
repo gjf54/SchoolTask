@@ -65,6 +65,9 @@ nav .nonactive:hover > input
 .active > input 
 {
     background-color: #333;
+    box-shadow: 0 0 40px 0 crimson,
+                0 0 40px 0 crimson,
+                0 0 10px 0 crimson inset;
 }
 
 header figure > img
