@@ -7,27 +7,28 @@ div[class^=col], div.w-50
 {
     text-align: center;
 }
-  
-
+    
 .container
 {
-    background-color: #EEF;
-    padding-top: 20px;
-    border: 1px solid #EEF;
-    border-radius: 40px;
+    background-color: black;
 }
 
-.body
+body
 {
-    background-color: #CCC;
+    background-color: black;
 }
 
-nav > ul
+p, h1, h2, h3, h4, h5, h6 
 {
-    list-style-type: none;
+    color: white;
 }
 
-nav ul > li
+hr
+{
+    color: red;
+}
+
+nav .menuItem 
 {
     list-style-type: none;
     text-decoration: none;
@@ -35,28 +36,35 @@ nav ul > li
     padding: 3em;
 }
 
-nav ul a
+nav input
 {
-    border: 1px solid #FFF;
-    border-radius: 10px;    
-    padding: 3em;
-    margin-top: 0.5em;
-    margin: -40px;
-    text-decoration: none;
-    color: #FFF;
-    text-transform: uppercase;
-    background-color: #00A;
+    display: inline-block;
 }
 
-/*nav ul > li > a:hover
+nav input
 {
-    background-color: #00B;
-}*/
+    margin-right: -20px;
+    margin-left: -20px;
+    background-color: #111;
+    border: .5px solid crimson;
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 30px 0 crimson,
+                0 0 30px 0 crimson,
+                0 0 10px 0 crimson inset;
+}
 
-.active 
+nav .nonactive:hover > input
 {
-    background-color: #DDD;
-    color: #000;
+    box-shadow: 0 0 20px 0 crimson,
+                0 0 20px 0 crimson,
+                0 0 10px 0 crimson inset;
+}
+
+.active > input 
+{
+    background-color: #333;
 }
 
 header figure > img
@@ -85,22 +93,39 @@ header figure > h3
     border-radius: 30px;
 }
 
+.imageBoard p
+{
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #3F2;
+    border-radius: 30px;
+}
+
 .circles
 {
-    height: 400px;
-    padding: 150px;
+    padding: 1rem;
 }
 
 .circles h6
 {
-    display: inline-block;
+    display: inline-flex;
     padding: 30px;
-    border: 3px solid #BBB;
-    border-radius: 90%;
-    box-sizing: border-box;
+    border: 3px solid purple;
+    border-radius: 20px;
 }
 
 .circle p
 {
     font-size: 50%;
+}
+
+footer .container
+{
+    padding: 20px;
+    border-top: 2px solid white;
+}
+
+footer p
+{
+    color: #999
 }
